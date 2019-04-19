@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Data Binding</title>
+    <script src="../Js/vue.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="intro">
+      <input type="text" name="Text" v-model="Message">
+      <p>{{Message}}</p>
+    </div>
+    <script type="text/javascript">
+      var vue_intro = new Vue({
+        el : '#intro',
+          data : {
+            Message : "Heyo!!"
+          }
+      });
+
+    </script>
+  </body>
+</html>
