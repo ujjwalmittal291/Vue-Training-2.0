@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="../Js/vue.js" charset="utf-8"></script>
+    <title>Class and Attribute Binding</title>
+    <style>
+      .is-Loading{
+        background:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro">
+      <ul>
+        <li v-for="task in tasks" v-text="task.description"></li>
+      </ul>
+
+      <ul>
+        <li v-for="task in incompleteTasks" v-text="task.description"></li>
+      </ul>
+
+    </div>
+    <script src="computedproperties.js" charset="utf-8"></script>
+  </body>
+</html>

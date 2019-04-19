@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="../Js/vue.js" charset="utf-8"></script>
+    <title>Class and Attribute Binding</title>
+    <style>
+      .is-Loading{
+        background:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro">
+      <button :class="{'is-Loading':isLoading}" @click="toggleClass">Toggle Me</button>
+    </div>
+    <script src="classbinding.js" charset="utf-8"></script>
+  </body>
+</html>

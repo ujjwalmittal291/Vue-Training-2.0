@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="../Js/vue.js" charset="utf-8"></script>
+    <title>Class and Attribute Binding</title>
+    <style>
+      .is-Loading{
+        background:red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro">
+      <ul>
+        <li v-for="task in tasks" v-if="task.completed" v-text="task.description"></li>
+      </ul>
+    </div>
+    <!-- // <script src="computedproperties.js" charset="utf-8"></script> -->
+    <script type="text/javascript">
+      var intr = new Vue({
+        el : '#intro',
+        data : {
+          tasks : [
+            {description : 'Eat', completed : true},
+            {description : 'Sleep', completed : true},
+            {description : 'Run', completed : false},
+            {description : 'Repeat', completed : false},
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
